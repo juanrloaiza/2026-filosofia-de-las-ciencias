@@ -19,7 +19,7 @@
   [*Profesor:*], [Juan R. Loaiza],
   [*Correo electrónico:*], link("jloaiza@uahurtado.cl"),
   [*Horario:*], [Miércoles 14:00-17:20],
-  [*Sala:*], [#todo[E42]],
+  [*Sala:*], [E33],
   [*Carácter:*], [Obligatorio],
   [*Tipo:*], [Curso],
   [*Prerrequisitos:*], [N/A],
