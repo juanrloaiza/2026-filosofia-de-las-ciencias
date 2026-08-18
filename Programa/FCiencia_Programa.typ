@@ -1,34 +1,12 @@
-#set text(lang: "es", font: "Lato")
-#set par(justify: true)
+#import "@loaiza/uah-syllabus:0.1.0": syllabus, todo
 
-#align(center)[
-  //#box(image("{/Users/juanrloaiza/Documents/Universidad/10 UAH/Docencia/Cursos/Plantillas/logo_uah.png}", height: 1.5cm, alt: "image"))
-
-  = Filosofía de las ciencias
-
-  Departamento de Filosofía · Licenciatura y Pedagogía en Filosofía ·
-  2026-II
-
-]
-#let todo(b) = highlight(fill: red, b)
-#table(
-  columns: 2,
-  align: left,
-  stroke: none,
-  inset: (left: 0pt, right: 1em, y: 4pt),
-  [*Profesor:*], [Juan R. Loaiza],
-  [*Correo electrónico:*], link("jloaiza@uahurtado.cl"),
-  [*Horario:*], [Miércoles 14:00-17:20],
-  [*Sala:*], [E33],
-  [*Carácter:*], [Obligatorio],
-  [*Tipo:*], [Curso],
-  [*Prerrequisitos:*], [N/A],
-  [*Créditos:*], [10],
-  table.cell(colspan: 2)[*Horas cronológicas de dedicación:*],
-  [*Docencia directa:* 3],
-  [*Trabajo autónomo:* 7],
+#show: syllabus.with(
+  clase: "Filosofía de las ciencias",
+  programa: "Licenciatura y Pedagogía en Filosofía",
+  semestre: "2026-II",
+  horario: "Miércoles 14:30-17:20",
+  sala: "E33",
 )
-
 
 == Descripción
 
@@ -64,9 +42,7 @@ estructuras de género que ella encarna.
 === Habilidades generales
 
 - Comparar y contrastar distintas teorías filosóficas.
-
 - Evaluar la validez y solidez de argumentos filosóficos.
-
 - Escribir ensayos filosóficos que aproximen formatos académicos
   estándar como el artículo de investigación publicable en revistas
   académicas indexadas.
@@ -78,13 +54,10 @@ Al término de esta actividad, cada estudiante será capaz de:
 + Analizar la estructura lógica del problema de la inducción y algunas
   de sus consecuencias sobre la relación entre #emph[hechos] y
   #emph[ciencia].
-
 + Analizar la estructura e inferir algunas consecuencias de la tesis
   Duhem-Quine y los argumentos de subdeterminación empírica para la
   filosofía de la ciencia contemporánea y otras áreas de la filosofía.
-
 + Identificar los argumentos principales a favor y en contra del realismo científico.
-
 + Distinguir las tesis principales y los argumentos centrales de algunos
   marcos filosóficos en la historiografía de la ciencia.
 
@@ -107,7 +80,7 @@ Al término de esta actividad, cada estudiante será capaz de:
 
 @Popper2017
 
-==== 09.09 - Taller: Inducción
+==== 09.09 - Taller presencial: Inducción
 
 ==== 16.09 - No hay clase (semana de receso)
 
@@ -163,70 +136,31 @@ Al término de esta actividad, cada estudiante será capaz de:
 
 == Metodología
 
-La actividad general de cada sesión girará en torno a la presentación
-del tema por parte del profesor. Durante esta presentación, el profesor
-introducirá el tema y las ideas centrales a discutir, y profundizará en
-aspectos importantes para el curso o que sean de interés de los y las
-estudiantes. Se espera la participación activa de los y las estudiantes,
-y se fomentará la participación mediante preguntas o actividades cortas
-durante la presentación. Cada sesión también podrá estar acompañada de
-una actividad introductoria para plantear problemas y preguntas a
-discutir durante la presentación, y/o de una actividad al final de la
-sesión para reforzar o aplicar los conceptos e ideas discutidas durante
-la presentación.
+La actividad general de cada sesión girará en torno a la presentación del tema por parte del profesor. Durante esta presentación, el profesor introducirá el tema y las ideas centrales a discutir, y profundizará en aspectos importantes para el curso o que sean de interés de los y las estudiantes. Se espera la participación activa de los y las estudiantes, y se fomentará la participación mediante preguntas o actividades cortas durante la presentación. Cada sesión también podrá estar acompañada de una actividad introductoria para plantear problemas y preguntas a discutir durante la presentación, y/o de una actividad al final de la sesión para reforzar o aplicar los conceptos e ideas discutidas durante la presentación.
 
-El curso también incluye dos sesiones reservadas para evaluar lo
-aprendido hasta el momento en el curso. Durante estas sesiones, los y
-las estudiantes desarrollarán una evaluación escrita que el profesor
-proveerá en el salón de clase o en el aula virtual en UCampus. Los y las
-estudiantes podrán hacer uso de computadores, apuntes y del material
-bibliográfico que consideren relevante para la evaluación. No obstante,
-queda expresamente prohibida cualquier forma de plagio, entendido como
-la presentación a nombre propio de ideas no desarrolladas por el o la
-estudiante. Esto, por supuesto, incluye presentar texto producido por
-sistemas artificiales como texto propio.
+El curso también incluye dos sesiones reservadas para evaluar lo aprendido hasta el momento en el curso. Durante estas sesiones, los y las estudiantes desarrollarán una evaluación escrita que el profesor proveerá en el salón de clase o en el aula virtual en UCampus. Los y las estudiantes podrán hacer uso de computadores, apuntes y del material bibliográfico que consideren relevante para la evaluación. No obstante, queda expresamente prohibida cualquier forma de plagio, entendido como la presentación a nombre propio de ideas no desarrolladas por el o la estudiante. Esto, por supuesto, incluye presentar texto producido por sistemas artificiales como texto propio.
 
-El profesor proveerá con antelación recomendaciones y guías para que los
-y las estudiantes puedan prepararse con tiempo.
+El profesor proveerá con antelación recomendaciones y guías para que los y las estudiantes puedan prepararse con tiempo.
 
-Estas reglas podrán ajustarse dependiendo del formato específico de la
-evaluación y están sujetas a revisión a lo largo del semestre.
+Estas reglas podrán ajustarse dependiendo del formato específico de la evaluación y están sujetas a revisión a lo largo del semestre.
 
-== #todo[Evaluación de aprendizajes]
+== Evaluación de aprendizajes
 
-El curso se evaluará con dos exámenes presenciales y un ensayo
-filosófico.
+El curso se evaluará con las siguientes pruebas.
 
-#figure(
-  align(center)[#table(
-    columns: 3,
-    align: (left, left, left),
-    table.header([Fecha], [Evaluación], [Porcentaje]),
-    table.hline(),
-    [], [Taller: Lógica y epistemología de la ciencia], [30%],
-    [07.10],
-    [Examen presencial: Inducción y subdeterminación
-      empírica],
-    [30%],
-    [25.11], [Examen pedagógico: Microlección asincrónica], [40%],
-  )],
-  kind: table,
+#table(
+  columns: 3,
+  table.header([Fecha], [Evaluación], [Porcentaje]),
+  [09.09], [Taller: Inducción], [30%],
+  [07.10], [Examen presencial: Inducción y subdeterminación empírica], [30%],
+  [25.11], [Examen pedagógico: Microlección asincrónica], [40%],
 )
 
-=== Taller: Lógica y epistemología de la ciencia
+=== Taller: Inducción
 
-En la primera parte del curso, los y las estudiantes realizarán un
-taller enfocado en la lógica y epistemología de la ciencia. Este taller
-se realizará de manera asincrónica y a crédito individual. El profesor
-proveerá un conjunto de preguntas para que los y las estudiantes
-respondan en un documento subido a UCampus.
+En la primera parte del curso, los y las estudiantes realizarán un taller enfocado en el problema de la inducción. Este taller se realizará de manera presencial y a crédito individual. El profesor proveerá un conjunto de preguntas para que los y las estudiantes respondan en un documento subido a UCampus.
 
-Este taller repasará algunos temas sobre lógica formal y teoría del
-conocimiento. No es necesario que los y las estudiantes tengan
-conocimientos previos sobre estos temas, pero se espera que quienes no
-tengan conocimientos previos se preparen con antelación. El profesor
-proveerá con material de lectura y recursos para que los y las
-estudiantes puedan prepararse adecuadamente.
+Este taller repasará algunos temas sobre lógica formal y teoría del conocimiento. No es necesario que los y las estudiantes tengan conocimientos previos sobre estos temas, pero se espera que quienes no tengan conocimientos previos se preparen con antelación. El profesor proveerá con material de lectura y recursos para que los y las estudiantes puedan prepararse adecuadamente.
 
 === Examen presencial
 
@@ -306,16 +240,7 @@ el desarrollo exitoso del curso.
 #set bibliography(style: "apa", title: none)
 
 === Bibliografía obligatoria
-#bibliography("Obligatoria.bib")
+#bibliography("bib/Obligatoria.bib")
 
 === Bibliografía auxiliar
-#bibliography("Auxiliar.bib", full: true)
-
-== Política de borradores y correcciones
-
-#include "10 Política de Borradores.typ"
-
-
-== Política sobre discriminación arbitraria y violencia sexual y/o de género
-
-#include "11 Política de Género.typ"
+#bibliography("bib/Auxiliar.bib", full: true)
