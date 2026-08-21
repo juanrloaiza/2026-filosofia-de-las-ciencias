@@ -16,7 +16,8 @@
   [
     === Sobre mí
 
-    Académico UAH (2023) Intereses de investigación:
+    Académico UAH (2023) \
+    Intereses de investigación:
     - Filosofía de las (ciencias de las) emociones
     - Filosofía de la psicología y la neurociencia
   ],
@@ -41,7 +42,7 @@ Qué filósofas/os querrían:
 #grid(align: horizon)[
   La *ciencia* es una práctica humana de producción de conocimiento.
 ][
-  #image("venn.pdf", width: 15em)
+  #image("figuras/venn.pdf", width: 15em)
 ]
 
 == Ejemplares
@@ -85,7 +86,7 @@ Criterios tradicionales de demarcación:
 
 Se dice que la ciencia se identifica por el uso de un *método científico*.
 
-#align(center, image("fig1.pdf", width: 90%))
+#image("figuras/fig1.pdf", width: 90%)
 
 ¿De dónde sale la idea de que hay _un_ "método científico"?
 
@@ -97,12 +98,7 @@ Se dice que la ciencia se identifica por el uso de un *método científico*.
 
 Varias disciplinas "pseudocientíficas" cumplen con el uso de métodos similares.
 
-#align(center, box(
-  inset: 1em,
-  stroke: 0.5pt,
-  radius: 1em,
-)[
-  #set align(left)
+#box[
   *Ejemplo: El "método científico" en la astrología*
 
   Pregunta: ¿Qué rasgos de la personalidad tienen las personas nacidas en agosto?\
@@ -110,7 +106,7 @@ Varias disciplinas "pseudocientíficas" cumplen con el uso de métodos similares
   Observación: Algunas personas nacidas en agosto son entusiastas y creativas.\
   Análisis: La observación concuerda con la hipótesis.\
   Resultado: La hipótesis es verdadera.
-])
+]
 
 == El problema de la demarcación
 
@@ -118,9 +114,9 @@ Varias disciplinas "pseudocientíficas" cumplen con el uso de métodos similares
 
 Adicionalmente, algunos elementos de las ciencias paradigmáticas no siguen este método.
 
-#align(center, box(width: 70%, stroke: 0.5pt, radius: 1em, inset: 1em)[
+#box(width: 80%)[
   "Todo cuerpo persevera en su estado de reposo o movimiento uniforme y rectilíneo a no ser que sea obligado a cambiar su estado por fuerzas impresas sobre él."
-])
+]
 
 Es imposible obtener un sistema experimental sin ninguna fuerza.
 
@@ -144,7 +140,7 @@ Algunos problemas:
 
 Con todo, parte del problema parece estar en la relación que hay entre los *hechos* y nuestras *teorías*.
 
-#grid(columns: 2)[
+#grid[
   - Las teorías parecen contener expectativas sobre los hechos.
   - Los hechos parecen confirmar y falsear teorías.
   - Necesitamos confrontar los hechos para saber cuáles teorías son verdaderas y cuáles son falsas.
@@ -251,29 +247,29 @@ Para acercarnos a estas preguntas, estudiaremos:
 
 #grid(columns: 3, gutter: 1.5em)[
 
-    ==== Taller: Inducción (30%)
+  ==== Taller: Inducción (30%)
 
-    Taller *presencial* sobre conceptos básicos de la ciencia e inducción.
+  Taller *presencial* sobre conceptos básicos de la ciencia e inducción.
 
-    - No requiere conocimientos previos.
+  - No requiere conocimientos previos.
 
-    *Fecha:* 9 de septiembre
+  *Fecha:* 9 de septiembre
 
-  ][
-    ==== Examen presencial (30%)
+][
+  ==== Examen presencial (30%)
 
-    Examen *presencial* sobre inducción y subdeterminación empírica.
+  Examen *presencial* sobre inducción y subdeterminación empírica.
 
-    *Fecha:* 7 de octubre
+  *Fecha:* 7 de octubre
 
-  ][
-    ==== Examen pedagógico (40%)
+][
+  ==== Examen pedagógico (40%)
 
-    Microlección asincrónica para estudiantes de nivel escolar.
+  Microlección asincrónica para estudiantes de nivel escolar.
 
-    *Fecha:* 25 de noviembre
+  *Fecha:* 25 de noviembre
 
-  ]
+]
 
 == Reglas de juego
 
@@ -296,21 +292,17 @@ La asistencia es *obligatoria* y responsabilidad de cada estudiante.
 
 Es necesario asistir a mínimo *70%* de las sesiones de clase para aprobar el curso.
 
-#block[
-  #block[
-    Si hay inasistencia justificada:
+Si hay inasistencia justificada:
 
-    - Presenten su excusa según el Reglamento Académico.
+- Presenten su excusa según el Reglamento Académico.
 
-  ]
-  #block[
-    Si hay inasistencia reglamentariamente injustificada:
 
-    - ¡Hablen conmigo!
-    - Podemos negociar fechas, entregas, etc.
+Si hay inasistencia reglamentariamente injustificada:
 
-  ]
-]
+- ¡Hablen conmigo!
+- Podemos negociar fechas, entregas, etc.
+
+
 == Sobre el plagio
 
 Cometer plagio no solo es moralmente condenable, sino poco inteligente.
@@ -338,12 +330,14 @@ Usar IA para resumir o procesar textos filosóficos nos quita la práctica neces
 
 Toda la comunicación será mediante el *correo institucional* o mediante *UCampus*.
 
-#align(center, box(width: 80%, fill: rgb("#fddddd"), stroke: red, inset: 1em, radius: 1em)[
+#box(width: 80%, fill: rgb("#fddddd"), stroke: red)[
+  #set align(center)
+  
   *¿Y si no funciona mi correo institucional?*
 
   ¡Busca inmediatamente ayuda en tecnologías!
 
   El correo institucional es el mecanismo fundamental de comunicación entre nosotros/as.
-])
+]
 
 Podrán contactarme a *jloaiza\@uahurtado.cl*.
