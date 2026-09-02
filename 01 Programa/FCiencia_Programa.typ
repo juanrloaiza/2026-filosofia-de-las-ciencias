@@ -66,25 +66,27 @@ Al término de esta actividad, cada estudiante será capaz de:
 #set cite(form: "full")
 #let trad(ref) = block(inset: (left: 1em))[_Traducción al español:_ #ref]
 
-==== 19.08 - Conceptos fundamentales de la ciencia
+==== 19.08 - Introducción
+
+==== 26.08 - Conceptos fundamentales de la ciencia
 
 === Unidad I: Ciencia y hechos - Inducción y subdeterminación empírica
 
-==== 26.08 - El problema de la inducción
+==== 02.09 - El problema de la inducción
 
 @Goodman1983
 
 #trad[@Goodman2004]
 
-==== 02.09 - El falsacionismo de Popper
+==== 09.09 - El falsacionismo de Popper
 
 @Popper2017
 
-==== 09.09 - Taller presencial: Inducción
-
 ==== 16.09 - No hay clase (semana de receso)
 
-==== 23.09 - Subdeterminación empírica I: la tesis Duhem-Quine
+==== 23.09 - Taller presencial: Inducción
+
+==== 30.09 - Subdeterminación empírica I: la tesis Duhem-Quine
 
 @Quine1963
 
@@ -94,23 +96,21 @@ Al término de esta actividad, cada estudiante será capaz de:
 
 #trad[@Duhem1991]
 
-==== 30.09 - Subdeterminación empírica II: ciencia y valores
+==== 07.10 - Subdeterminación empírica II: ciencia y valores
 
 @Longino1990
 
-==== 07.10 - Examen presencial: Inducción y subdeterminación empírica
+==== 14.10 - Examen presencial: Inducción y subdeterminación empírica
 
 === Unidad II: Realismo y antirrealismo científico
 
-==== 14.10 - La ciencia solo se explica por su acceso a la verdad
+==== 21.10 - La ciencia solo se explica por su acceso a la verdad
 
 @Soto2024
 
-==== 21.10 - La ciencia solo salva las apariencias (sesión con la Dra. Maribel Barroso)
+==== 28.10 - La ciencia solo salva las apariencias (sesión con la Dra. Maribel Barroso)
 
 @vanFraassen
-
-==== 28.10 - (Sesión de trabajo independiente)
 
 === Unidad III: La estructura social e histórica de la ciencia
 ==== 04.11 - Kuhn y las revoluciones científicas
@@ -131,7 +131,6 @@ Al término de esta actividad, cada estudiante será capaz de:
 
 #trad[@Feyerabend2010]
 
-
 ==== 25.11 -- Consideraciones finales
 
 == Metodología
@@ -151,8 +150,8 @@ El curso se evaluará con las siguientes pruebas.
 #table(
   columns: 3,
   table.header([Fecha], [Evaluación], [Porcentaje]),
-  [09.09], [Taller: Inducción], [30%],
-  [07.10], [Examen presencial: Inducción y subdeterminación empírica], [30%],
+  [23.09], [Taller: Inducción], [30%],
+  [14.10], [Examen presencial: Inducción y subdeterminación empírica], [30%],
   [25.11], [Examen pedagógico: Microlección asincrónica], [40%],
 )
 
