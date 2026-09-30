@@ -1,0 +1,25 @@
+flowchart TB
+    O1(O1)
+    O2(O2)
+    O3(O3)
+
+    P1(P1)
+    P2(P2)
+    P3(P3)
+    P4(P4)
+    P5(P5)
+    P6(P6)
+
+    P6 --> P1 & P3 & P5
+    P2 & P3 --> O2
+    P3 & P4 & P5 --> O3
+    P5 --> P1
+    P3 & P4 --> P2
+    P1 & P2 --> O1
+
+    class O2,O3 Peach;
+    class O1,P1,P6 Rose;
+
+    classDef Peach stroke-width:1px, stroke-dasharray:none, stroke:#FBB35A, fill:#FFEFDB, color:#8F632D
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+
