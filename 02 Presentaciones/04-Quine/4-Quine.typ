@@ -3,7 +3,8 @@
   title: "La tesis Duhem/Quine",
   course: "Filosofía de las Ciencias",
   semester: "2026-II",
-  date: "30 de septiembre de 2026"
+  date: "30 de septiembre de 2026",
+  draft: false
 )
 
 = Introducción
