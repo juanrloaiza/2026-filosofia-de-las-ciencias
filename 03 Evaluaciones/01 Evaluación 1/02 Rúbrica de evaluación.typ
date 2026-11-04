@@ -28,10 +28,21 @@
   ]
 
   *Estudiante*: #estudiante \
-  #let promedio = puntajes.values().sum() / puntajes.len()
-  #let nota = calc.round(1 + (promedio - 1) * 2, digits: 1)
+  #let calcNota(ps) = {
+    let promedio = ps.values().sum() / ps.len()
+    calc.round(1 + (promedio - 1) * 2, digits: 1)
+  }
+  #let corregidos = (:)
+  #for (k, v) in puntajes {
+    let c = correcciones.at(k, default: -1)
+    corregidos.insert(k, if c > 0 { c } else { v })
+  }
+  #let nota = calcNota(puntajes)
+  #let notaCorregida = calcNota(corregidos)
 
-  *Nota:* #nota
+  *Nota:* #if corregidos != puntajes [
+    #nota #sym.arrow.r #text(..correctionFormat)[#notaCorregida]
+  ] else [#nota]
 
 
   #show table.cell.where(x: puntajes.P1, y: 1): set text(..markFormat)
@@ -43,13 +54,15 @@
   #show table.cell.where(x: puntajes.P7, y: 7): set text(..markFormat)
 
 
-  #show table.cell.where(x: correcciones.P1, y: 1): set text(..correctionFormat)
-  #show table.cell.where(x: correcciones.P2, y: 2): set text(..correctionFormat)
-  #show table.cell.where(x: correcciones.P3, y: 3): set text(..correctionFormat)
-  #show table.cell.where(x: correcciones.P4, y: 4): set text(..correctionFormat)
-  #show table.cell.where(x: correcciones.P5, y: 5): set text(..correctionFormat)
-  #show table.cell.where(x: correcciones.P6, y: 6): set text(..correctionFormat)
-  #show table.cell.where(x: correcciones.P7, y: 7): set text(..correctionFormat)
+  // Las correcciones pueden ser parciales (p. ej. 2.5): en la tabla se marca
+  // la columna redondeada, pero la nota se calcula con el valor exacto.
+  #show table.cell.where(x: int(calc.round(correcciones.P1)), y: 1): set text(..correctionFormat)
+  #show table.cell.where(x: int(calc.round(correcciones.P2)), y: 2): set text(..correctionFormat)
+  #show table.cell.where(x: int(calc.round(correcciones.P3)), y: 3): set text(..correctionFormat)
+  #show table.cell.where(x: int(calc.round(correcciones.P4)), y: 4): set text(..correctionFormat)
+  #show table.cell.where(x: int(calc.round(correcciones.P5)), y: 5): set text(..correctionFormat)
+  #show table.cell.where(x: int(calc.round(correcciones.P6)), y: 6): set text(..correctionFormat)
+  #show table.cell.where(x: int(calc.round(correcciones.P7)), y: 7): set text(..correctionFormat)
 
   #block[
     #set par(justify: false)
