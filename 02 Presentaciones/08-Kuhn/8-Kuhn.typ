@@ -5,6 +5,7 @@
   course: "Filosofía de las Ciencias",
   semester: "2026-II",
   date: "4 de noviembre de 2026",
+  draft: false,
 )
 
 = Introducción
@@ -155,9 +156,9 @@ dentro del paradigma, i.e., #strong[«ciencia normal»]. #pause
 Durante períodos de #strong[ciencia normal], hay eventos que no son
 todavía explicados por el paradigma. #pause
 
-#definition([Acertijos], [
+#definition(term: [Acertijos])[
   Preguntas resolubles dentro de un paradigma
-]) #pause
+] #pause
 
 La ciencia normal posterga los acertijos más difíciles, con la
 expectativa de que la ciencia futura la resolverá.
@@ -170,10 +171,10 @@ expectativa de que la ciencia futura la resolverá.
 Eventualmente, un acertijo se vuelve apremiante y se convierte en una
 #strong[anomalía]. #pause
 
-#definition("Anomalía", [
-  Acertijo que se #strong[resiste] a la explicación dentro de un
-  paradigma.
-]) #pause
+#definition(term: "Anomalía")[
+  Acertijo que se #strong[resiste] a la explicación dentro de un paradigma.
+],
+#pause
 
 #example(width: 90%)[
   - Cálculo de órbitas y equinoccios en la astronomía ptolemaica
@@ -219,13 +220,15 @@ de ciencia.
 #let fase(titulo, color, ..eventos) = stack(
   spacing: 0.5em,
   block(width: 100%, fill: color, inset: 0.6em, radius: 4pt, align(center, strong(titulo))),
-  ..eventos.pos().map(e => block(
-    width: 100%,
-    fill: color.lighten(60%),
-    inset: 0.5em,
-    radius: 4pt,
-    align(center, text(size: 0.8em, e)),
-  )),
+  ..eventos
+    .pos()
+    .map(e => block(
+      width: 100%,
+      fill: color.lighten(60%),
+      inset: 0.5em,
+      radius: 4pt,
+      align(center, text(size: 0.8em, e)),
+    )),
 )
 #let flecha = align(horizon, text(size: 1.5em, sym.arrow.r))
 
@@ -345,10 +348,10 @@ Los paradigmas son #strong[inconmensurables] entre sí. #pause
 
 ¿Lleva la inconmensurabilidad al relativismo? #pause
 
-#definition("Relativismo", [
+#definition(term: "Relativismo")[
   Toda proposición es verdadera relativa a un marco
   (e.g., un paradigma)
-]) #pause
+] #pause
 
 Peligros:
 
@@ -406,9 +409,8 @@ Tuvo una recepción doble en filosofía y ciencias sociales. #pause
 
 Para Kuhn, la historia de la ciencia es la historia de paradigmas. #pause
 
-#definition("Paradigma", [
-  Modo de hacer ciencia
-]) #pause
+#definition(term: "Paradigma")[ Modo de hacer ciencia
+] #pause
 
 Un paradigma acarrea presuposiciones sobre: #pause
 
