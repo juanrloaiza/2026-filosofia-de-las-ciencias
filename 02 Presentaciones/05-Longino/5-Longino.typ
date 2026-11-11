@@ -3,7 +3,8 @@
   title: "Ciencia y Valores",
   course: "Filosofía de las Ciencias",
   semester: "2026-II",
-  date: "7 de octubre de 2026"
+  date: "7 de octubre de 2026",
+  draft: false
 )
 
 
